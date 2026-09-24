@@ -1,0 +1,294 @@
+/*Fonts*/
+body {
+  font-family: "basic-sans", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: "comba", sans-serif;
+  font-weight: 700;
+}
+
+/*Hero (About page)*/
+.hero {
+  position: relative;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.introduction {
+  font-size: 2.75rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;       
+}
+
+.introduction span {
+  color: var(--color-blue);
+}
+
+.profile-wrap {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.profile-image {
+  width: 15rem;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+/*About Section Styling*/
+.about {
+  padding: 1rem 5rem;
+}
+
+.about-inner {
+  max-width: 65rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-text h3 {
+  font-family: "basic-sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-text h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -0.5rem;
+  width: 30%;
+  height: 5px;
+  border-radius: 999px;
+}
+
+.about-intro h3::after {
+  background-color: #f2c14e;
+}
+
+.about-story h3::after {
+  background-color: #b5c96b;
+}
+
+.about-text p {
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+
+.highlight {
+  color: var(--color-blue);
+}
+
+/*Gallery Section*/
+.about-gallery {
+  background-color: var(--color-blue);
+  padding: 7rem 5rem;
+  margin-top: 3rem;
+}
+
+.about-gallery .about-inner {
+  max-width: 60rem;
+}
+
+.about-gallery h3 {
+  color: var(--text-color);
+  padding-top: 0;
+}
+
+.about-gallery h3::before {
+  display: none;
+}
+
+.about-gallery ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: none;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.about-gallery li {
+  text-align: center;
+}
+
+.about-gallery img {
+  width: 16rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.about-gallery p {
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.75rem;
+  z-index: 1;
+  position: relative;
+}
+
+.about-star {
+  position: absolute;
+  width: 40rem;
+  height: 53rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-star-1 {
+  bottom: -1rem;
+  left: -60%;
+}
+
+.about-star-2 {
+  bottom: -25rem;
+  left: -10%;
+}
+
+.about-star-3 {
+  bottom: -27rem;
+  right: -30%;
+}
+
+.about-star-4 {
+  bottom: -1.5rem;
+  left: 90%;
+}
+
+.about-star-5 {
+  bottom: 3rem;
+  left: 40%;
+}
+
+/*Contact Section*/
+.about-contact {
+  background-color: var(--color-pink);
+  padding: 3rem 5rem;
+}
+
+.about-contact .about-inner {
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-contact h3 {
+  font-family: "comba", sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-blue);
+  padding-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.about-contact h3::before {
+  display: none;
+}
+
+.about-contact-text p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: var(--text-color);
+}
+
+.about-contact-text a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.about-contact-text a:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.contact-icon svg,
+.search-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.about-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  max-width: 36rem;
+}
+
+.about-contact a.contact-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--color-blue);
+  color: var(--color-pink);
+  padding: 1rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.about-contact a.contact-pill:hover {
+  transform: scale(1.05);
+}
+
+.search-icon {
+  font-size: 1rem;
+}
+
+/*Tablet and small laptop*/
+@media (max-width: 1024px) {
+  .about, .about-gallery, .about-contact {
+    padding: 2.5rem 2rem;
+  }
+
+  .about-contact .about-inner {
+    flex-direction: column;
+  }
+}
+
+/*Phone*/
+@media (max-width: 600px) {
+  .introduction {
+    font-size: 1.25rem;
+  }
+
+  .profile-wrap {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .about-gallery ul {
+    gap: 1rem;
+  }
+
+  .about-gallery img {
+    width: 6rem;
+    height: 7.5rem;
+  }
+}

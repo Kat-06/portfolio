@@ -1,0 +1,157 @@
+@import url("https://use.typekit.net/vfs3nsv.css");
+
+/*Colors*/
+:root {
+    --text-color: #000000;
+    --color-blue: #63a6f7;
+    --color-pink: #fbe1fe;
+    --color-green: #d3d477;
+    --decor-scale: clamp(0.35, calc(0.35 + (100vw - 320px) / 1120px * 0.65), 1);
+}
+
+/*Global Styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  opacity: 0;
+  animation: page-fade-in 0.6s ease forwards;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Navigation Bar*/
+nav ul { 
+    display: flex;
+    gap: 2rem; 
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul:hover a.active:not(:hover) {
+  color: var(--text-color);
+}
+
+nav a.active {
+  position: relative;
+  padding-bottom: 0.625rem;
+  color: var(--color-blue);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='10' viewBox='0 0 12 10'%3E%3Cpath d='M0 5 Q3 1 6 5 T12 5' stroke='%2363a6f7' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 0.75rem 0.625rem;
+  background-position: 0 bottom;
+}
+
+@keyframes wiggle-flow {
+  from { background-position-x: 0; }
+  to { background-position-x: -0.75rem; }
+}
+
+nav a.active:hover {
+  animation: wiggle-flow 0.6s linear infinite;
+}
+
+.hero nav {
+    position: absolute;
+    top: 2.5rem; 
+    right: 4rem;
+}
+
+nav a { 
+    font-size: 1.64rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--color-blue);
+}
+
+/*Footer*/
+footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+.larger-footer {
+  font-size: 1.25rem;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-blue);
+  color: var(--color-pink);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#back-to-top:hover {
+  transform: scale(1.1);
+}
+
+/*Tablet and small laptop*/
+@media (max-width: 1024px) {
+  .hero nav {
+    top: 2rem;
+    right: 2.5rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1.35rem;
+  }
+}
+
+/*Phone*/
+@media (max-width: 600px) {
+  .hero nav {
+    top: 1.25rem;
+    right: 1.25rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}

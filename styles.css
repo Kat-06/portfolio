@@ -1,0 +1,460 @@
+/*Fonts*/
+body {
+  font-family: "basic-sans", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: "comba", sans-serif;
+  font-weight: 700;
+}
+
+/*Hero Section*/
+.hero {
+  position: relative;
+  min-height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+    position: relative;
+    display: inline-block;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: var(--color-blue);
+    padding: 0.5rem 0 1.5rem 0;
+}
+
+.spin-o {
+  display: inline-block;
+  animation: slow-spin 8s linear infinite;
+}
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sparkle {
+  width: 6em;
+  height: 5.65em;
+  position: absolute;
+  top: -3.36em;
+  right: -3.8em;
+}
+
+.tagline {
+    font-size: 2.5rem;
+    max-width: 43.75rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduction {
+    font-size: 3.25rem;
+}
+
+.hero-arrow {
+  width: 28.25rem;
+  height: 8.25rem;
+  position: absolute;
+  bottom: -1rem;
+  right: 8rem;
+  transform: scale(var(--decor-scale));
+  transform-origin: center bottom;
+}
+
+/*Project Section*/
+.project { 
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+/*Flaunt Project Section*/
+.project-flaunt { 
+    background-color: var(--color-blue);
+}
+
+.yellow-flower {
+  position: absolute;
+  width: 70rem;
+  top: -18rem;
+  left: -16rem;
+  z-index: 0;
+  transform: scale(var(--decor-scale));
+}
+
+.pink-star {
+  position: absolute;
+  width: 44rem;
+  z-index: 2;
+  transform: scale(var(--decor-scale));
+}
+
+.pink-star-top {
+  top: -22rem;
+  right: -70rem;
+}
+
+.pink-star-bottom {
+  top: 10rem;
+  right: 9rem;
+  transform: rotate(90deg) scale(var(--decor-scale));
+}
+
+.phone-mockup-f {
+  width: 60rem;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  margin-left: -15rem;
+}
+
+.phone-stack-f {
+  position: relative;
+  width: 26rem;
+}
+
+.project-inner-f {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  max-width: 75rem;
+  justify-content: center;
+}
+
+.project-text-f {
+  margin-left: 4rem;
+}
+
+.project-title-flaunt { 
+    color: var(--color-pink);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.project.project-flaunt p {
+    font-size: 1.75rem;
+    max-width: 32rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-flaunt {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  padding: 1rem 2.25rem;
+  background-color: var(--color-pink);
+  color: var(--color-blue);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/*Sportlingo Project Section*/
+.project-sportlingo { 
+    background-color: var(--color-pink);
+    position: relative;
+    z-index: 3;
+}
+
+.project-title-sportlingo { 
+    color: var(--color-blue);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.project.project-sportlingo p {
+    font-size: 1.75rem;
+    max-width: 32rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+} 
+
+.project-inner-s {
+  display: flex;
+  align-items: center;
+  gap: -5rem;
+  max-width: 75rem;
+  justify-content: center;
+}
+
+.desktop-mockup-s {
+  width: 45rem;
+  height: auto;
+  position: relative;
+  right: -5rem;
+  z-index: 5;
+}
+
+.phone-mockup-s {
+  width: 50rem;
+  height: auto;
+  position: absolute;
+  top: 4rem;
+  right: -9rem;
+  z-index: 6;
+  transform: rotate(4deg);
+}
+
+.orange-squiggle {
+  position: absolute;
+  width: 42rem;
+  top: -6rem;
+  right: 7rem;
+  z-index: 4;
+  transform: scale(var(--decor-scale));
+}
+
+.orange-squiggle-line {
+  position: absolute;
+  width: 10rem;
+  top: -2rem;
+  left: 52rem;
+  z-index: 4;
+  transform: scale(var(--decor-scale));
+}
+
+.orange-arrow {
+  position: absolute;
+  width: 14rem;
+  height: auto;
+  top: 30rem;
+  left: 12rem;
+  transform: rotate(240deg) scale(var(--decor-scale));
+  z-index: 4;
+}
+
+.btn-sportlingo {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  padding: 1rem 2.25rem;
+  background-color: var(--color-blue);
+  color: var(--color-pink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/*The Sorcerer's Inn Project Section*/
+.project-inn { 
+    background-color: var(--color-green);
+    overflow: hidden;
+}
+
+.desktop-mockup-inn {
+  width: 60rem;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  margin-left: -15rem;
+}
+
+.phone-stack-inn {
+  position: relative;
+  width: 26rem;
+}
+
+.project-inner-inn {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  max-width: 75rem;
+  justify-content: center;
+}
+
+.project-text-inn {
+  margin-left: 4rem;
+}
+
+.project-title-inn { 
+    color: var(--color-pink);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.project.project-inn p {
+    font-size: 1.75rem;
+    max-width: 32rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.pink-flower {
+  position: absolute;
+  width: 50rem;
+  bottom: -12rem;
+  left: -13rem;
+  z-index: 0;
+  transform: scaleX(-1) scale(var(--decor-scale));
+}
+
+.green-swirl-top,
+.green-swirl-bottom {
+  position: absolute;
+  width: 25rem;
+  z-index: 2;
+}
+
+.green-swirl-top {
+  bottom: -20rem;
+  left: 20rem;
+  transform: rotate(150deg) scaleX(-1) scale(var(--decor-scale));
+}
+
+.green-swirl-bottom {
+  bottom: 17rem;
+  right: -85rem;
+  transform: scaleX(-1) scale(var(--decor-scale));
+}
+
+.btn-inn {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto 0;
+  padding: 1rem 2.25rem;
+  background-color: var(--color-pink);
+  color: var(--color-green);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.yellow-flower,
+.pink-star,
+.orange-squiggle,
+.orange-squiggle-line,
+.orange-arrow,
+.pink-flower,
+.green-swirl-top,
+.green-swirl-bottom,
+.sparkle,
+.hero-arrow {
+  pointer-events: none;
+}
+
+.btn-flaunt, .btn-sportlingo, .btn-inn {
+  transition: transform 0.2s ease;
+}
+
+.btn-flaunt:hover, .btn-sportlingo:hover, .btn-inn:hover {
+  transform: scale(1.05);
+}
+
+/*Tablet and small laptop*/
+@media (max-width: 1024px) {
+  .tagline {
+    font-size: 2rem;
+  }
+
+  .project {
+    padding: 3rem 2rem;
+    min-height: auto;
+  }
+
+  .project-inner-f,
+  .project-inner-s,
+  .project-inner-inn {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .project-text-f,
+  .project-text-s,
+  .project-text-inn {
+    margin-left: 0;
+  }
+
+  .phone-stack-f,
+  .phone-stack-s,
+  .phone-stack-inn {
+    margin: 0 auto;
+  }
+
+  .phone-mockup-f,
+  .phone-mockup-s,
+  .desktop-mockup-s,
+  .desktop-mockup-inn {
+    display: none;
+  }
+
+  .project-title-flaunt,
+  .project-title-sportlingo,
+  .project-title-inn {
+    font-size: 3.5rem;
+  }
+
+  .project.project-flaunt p,
+  .project.project-sportlingo p,
+  .project.project-inn p {
+    font-size: 1.4rem;
+    max-width: 32rem;
+  }
+
+  .yellow-flower,
+  .orange-squiggle,
+  .pink-flower {
+    display: none;
+  }
+
+  .orange-arrow,
+  .green-swirl-top,
+  .green-swirl-bottom {
+    display: none;
+  }
+}
+
+/*Phone*/
+@media (max-width: 600px) {
+  .introduction {
+    font-size: 1.75rem;
+  }
+
+  .tagline {
+    font-size: 1.35rem;
+    padding: 0 1rem;
+  }
+
+  .project {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .hero-arrow {
+    right: 11rem;
+  }
+
+  .project-title-flaunt,
+  .project-title-sportlingo,
+  .project-title-inn {
+    font-size: 2.5rem;
+  }
+
+  .project.project-flaunt p,
+  .project.project-sportlingo p,
+  .project.project-inn p {
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+  }
+
+  .btn-flaunt,
+  .btn-sportlingo,
+  .btn-inn {
+    font-size: 1.5rem;
+    padding: 0.75rem 1.75rem;
+  }
+}
