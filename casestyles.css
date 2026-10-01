@@ -317,7 +317,23 @@ body {
   .case-header { padding: 2rem; }
   .case-title-block { flex-direction: column; text-align: center; }
   .case-hero-images { order: 1; width: 16rem; }
-  .case-title-text { order: 2; }
+  .case-title-text { order: 2; margin-left: 0; }  
   .case-main { padding: 2rem 1.5rem; }
   .palette-list { justify-content: center; }
+
+  .back-link { margin-left: 1rem; }                
+
+  .images-row {
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  .case-section-images {
+    max-width: 22rem;
+    width: 100%;
+  }
+
+  .palette-swatch { width: 8rem; height: 8rem; }   
+
+  .font-pairing { flex-direction: column; gap: 2rem; }
+  .persona-block { flex-direction: column; }
 }
