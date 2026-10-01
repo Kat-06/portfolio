@@ -25,6 +25,7 @@ h1, h2, h3 {
     font-size: clamp(2.5rem, 8vw, 5rem);
     color: var(--color-blue);
     padding: 0.5rem 0 1.5rem 0;
+    white-space: nowrap;
 }
 
 .spin-o {
@@ -424,7 +425,11 @@ h1, h2, h3 {
   .introduction {
     font-size: 1.75rem;
   }
-
+ 
+  .hero h1 {
+    font-size: clamp(1.6rem, 9vw, 2.25rem);  /* small enough to fit on one line at phone widths */
+  }
+  
   .tagline {
     font-size: 1.35rem;
     padding: 0 1rem;
