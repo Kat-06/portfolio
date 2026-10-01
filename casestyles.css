@@ -321,6 +321,21 @@ body {
   .case-main { padding: 2rem 1.5rem; }
   .palette-list { justify-content: center; }
 
+  .palette-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+    justify-items: center;
+  }
+
+  .palette-item { max-width: 100%; }
+
+  .palette-swatch { width: 7rem; height: 7rem; }
+
+  .palette-name { font-size: 1.1rem; }
+  .palette-hex { font-size: 1rem; }
+}
+
   .back-link { margin-left: 1rem; }                
 
   .images-row {
@@ -343,7 +358,7 @@ body {
   }
 
   .case-section-images {
-    flex: 0 0 80%;               
+    flex: 0 0 80%;              
     max-width: none;
     width: 80%;
     scroll-snap-align: center;   
