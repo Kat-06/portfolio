@@ -324,16 +324,28 @@ body {
   .back-link { margin-left: 1rem; }                
 
   .images-row {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;       
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
     padding: 0 1.5rem;
+    scroll-padding-left: 1.5rem;
+    justify-content: flex-start;  
   }
+
+  .images-row::-webkit-scrollbar {
+    display: none;               
+  }
+  .images-row {
+    scrollbar-width: none;      
+  }
+
   .case-section-images {
-    max-width: 22rem;
-    width: 100%;
+    flex: 0 0 80%;               
+    max-width: none;
+    width: 80%;
+    scroll-snap-align: center;   
   }
-
-  .palette-swatch { width: 8rem; height: 8rem; }   
-
-  .font-pairing { flex-direction: column; gap: 2rem; }
-  .persona-block { flex-direction: column; }
 }
