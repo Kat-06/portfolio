@@ -278,8 +278,18 @@ h1, h2, h3 {
 
   .about-contact .about-inner {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-contact-links {
+    max-width: 100%;
+  }
+
+    .about-star {
+    display: none;
   }
 }
+
 
 /*Phone*/
 @media (max-width: 600px) {
@@ -293,11 +303,24 @@ h1, h2, h3 {
   }
 
   .about-gallery ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    justify-items: center;
   }
 
-  .about-gallery img {
-    width: 6rem;
-    height: 7.5rem;
+   .about-gallery img {
+    width: 100%;
+    max-width: 11rem;
+    height: 13rem;
+  }
+
+  .about, .about-gallery, .about-contact {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-contact-text p,
+  .about-contact-text a {
+    font-size: 1.5rem;
   }
 }

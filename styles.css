@@ -408,7 +408,9 @@ h1, h2, h3 {
   }
 
   .yellow-flower,
+  .pink-star,
   .orange-squiggle,
+  .orange-squiggle-line,
   .pink-flower {
     display: none;
   }
@@ -422,38 +424,37 @@ h1, h2, h3 {
 
 /*Phone*/
 @media (max-width: 600px) {
-  .introduction {
-    font-size: 1.75rem;
+  .hero {
+    padding: 0 1.25rem;
+    min-height: 55vh;
   }
- 
+
+  .introduction {
+    font-size: 1.5rem;
+  } 
+
   .hero h1 {
-    font-size: clamp(1.6rem, 9vw, 2.25rem);  /* small enough to fit on one line at phone widths */
+    font-size: clamp(1.4rem, 8vw, 1.9rem);
+    padding: 0.25rem 0 0.5rem 0;
   }
 
   .tagline {
     font-size: 1.35rem;
-    padding: 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
   }
 
   .project {
     padding: 2.5rem 1.5rem;
   }
 
-   .hero {
-    padding: 0 1.25rem;
+  .sparkle {
+    right: -6rem;
+    top: -7rem;
   }
 
- .sparkle {
-    right: -1rem;
-    top: -2rem;
-  }
-
-   .hero-arrow {
-    width: 14rem;
-    height: 4.1rem;
-    right: 1.5rem;
-    bottom: 0.5rem;
-    transform-origin: right bottom;
+  .hero-arrow {
+    right: -10rem;
+    bottom: .05rem;
   }
 
   .project-title-flaunt,
@@ -461,6 +462,15 @@ h1, h2, h3 {
   .project-title-inn {
     font-size: 2.5rem;
   }
+
+  .project-text-f,
+  .project-text-inn {
+    padding: 0 1rem;
+  }
+
+.project-sportlingo {
+  padding-top: 4rem;
+}
 
   .project.project-flaunt p,
   .project.project-sportlingo p,
