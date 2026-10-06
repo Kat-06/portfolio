@@ -213,7 +213,7 @@ h1, h2, h3 {
 .orange-squiggle {
   position: absolute;
   width: 42rem;
-  top: -6rem;
+  top: -7rem;
   right: 7rem;
   z-index: 4;
   transform: scale(var(--decor-scale));
