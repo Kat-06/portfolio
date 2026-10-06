@@ -323,8 +323,9 @@ h1, h2, h3 {
   font-size: 1.15rem;
 }
 
-.about-contact-text a {
-  font-size: 0.6rem;
+.about-contact-text a,
+.about-contact-text p {
+  font-size: 1rem;
 }
 
 .about-text h3 {
